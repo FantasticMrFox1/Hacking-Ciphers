@@ -26,3 +26,15 @@ I'll be using Python 2.7 since it comes default on Mac
 * detectEnglish.py - Given a string, determines how many of "words" can be found in dictionary.txt
 * dictionary.txt - a list of English words
 
+# Substitution Cipher
+#### A more advanced version of Caesar Cipher. Instead of shifting letters of the Alphabets by a key, letters are directly replaced by other letters of the alphabet, resulting in a 26 unique characters key. This gives a possibility of 26!(factorial) combinations! So instead of brute forcing each possible key, we want to map each word to its cipher pattern, so we can compare them to those similar in the dictionary. A word's pattern is determined by the amount of unique letters it has. Example: 'Hello' = '0.1.2.2.3' and 'Raymond' = '0.1.2.3.4.5.6.7' and 'Happy' = '0.1.2.2.3'. See how 'Hello' and 'Happy' maps to the same pattern? That's how we can determine possible substitutions.
+##### Files:
+* substitution.py - The main program: en/decrypts a string/file with a 26 character key.
+* substitutionTest.py - Tests our main program by generating random strings/keys to ensure algorithm is correct.
+* makeWordPatterns.py - A program to create a python file.
+* wordPatterns.py - Created by makeWordPatterns.py. Contains a single map of all the words in the dictionary, and their corresponding cipher pattern.
+* subHack.py - Copied algorithms directly from Hacking Ciphers book. This program is used to find intersection of words. The more words in a string the better, to eliminate bad substitutions. Prints the potential key map, and (possible) deciphered text.
+* dictionary.txt - Needed again by makeWordPatterns.py
+* textfile.txt/enc.textfile.txt/hacked.enc.textfile.txt - See how well our program did by comparing hacked.enc.textfile.txt and the original textfile.txt
+
+
