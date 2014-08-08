@@ -1,0 +1,1 @@
+Hello my name is Raymond, it's very nice to meet you. Today is August eight, twenty fourteen. I am using this as a test program to make sure that my substitution decryption hacker is working properly. I will try to use big words so that the algorithm being used will work faster, but there are no guarantees.
