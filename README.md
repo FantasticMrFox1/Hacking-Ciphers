@@ -18,7 +18,7 @@ I'll be using Python 2.7 since it comes default on Mac
 
 # Transposition Cipher
 #### A little tougher to crack compared to Caesar Shift. Given a key N, this algorithm creates N columns of arrays. For each character in a given string, it will fill up the table from left to right, but READ it top to bottom. For example: "Hello Raymond" with key 5 will be read as "H oeRnladlyom". To decipher this, you do some fancy math to find the correct number of columns, and do as you would to encrypt. 
-#### Hacking this is harder, since they number of keys is proportional to the length of the string, a long string can have a bunch of possibie keys. So, we must split the string into words, and brute force each word against the key, and compare the results to words in the English dictionary. If there are enough matches of words, we can say with enough certainty that we have the correct key.
+#### Hacking this is harder, since they number of keys is proportional to the length of the string, a long string can have a bunch of possible keys. So, we must split the string into words, and brute force each word against the key, and compare the results to words in the English dictionary. If there are enough matches of words, we can say with enough certainty that we have the correct key.
 ##### Files:
 * transposition.py - The main program, used to en/decrypt strings with a given key.
 * transpositionTest.py - Ensures that our program's algorithm is running correctly by testing 1000 random strings/keys.
