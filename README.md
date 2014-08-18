@@ -37,4 +37,9 @@ I'll be using Python 2.7 since it comes default on Mac
 * dictionary.txt - Needed again by makeWordPatterns.py
 * textfile.txt/enc.textfile.txt/hacked.enc.textfile.txt - See how well our program did by comparing hacked.enc.textfile.txt and the original textfile.txt
 
+# Vigenere Cipher
+#### Another variation of the Caesar Cipher. The key consists of multiple shifts. The key is often a word, where each letter of the word is a subkey. A = 0, Z = 25, and everything in between.
+##### Files:
+* vigenere.py - The main program: en/decrypts a string/file with a key of user's choice.
+* vigenereTest.py - Tests the main program to ensure algorithms is working correctly.
 

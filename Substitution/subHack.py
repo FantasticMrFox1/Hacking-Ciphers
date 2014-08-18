@@ -2,7 +2,7 @@
 # http://inventwithpython.com/hacking (BSD Licensed)
 # Small edits made by: Raymond Ho (August 8th, 2014)
 
-# This program only works for long texts.
+# This program only better on long texts.
 # Makes it easier to find intersects between maps.
 
 # USAGE: python subHack.py [optional file]
@@ -45,7 +45,10 @@ def main():
 
 def getBlankCipherletterMapping():
     # Returns a dictionary value that is a blank cipherletter mapping.
-    return {'A': [], 'B': [], 'C': [], 'D': [], 'E': [], 'F': [], 'G': [], 'H': [], 'I': [], 'J': [], 'K': [], 'L': [], 'M': [], 'N': [], 'O': [], 'P': [], 'Q': [], 'R': [], 'S': [], 'T': [], 'U': [], 'V': [], 'W': [], 'X': [], 'Y': [], 'Z': []}
+    return {'A': [], 'B': [], 'C': [], 'D': [], 'E': [], 'F': [], 'G': [],
+     		'H': [], 'I': [], 'J': [], 'K': [], 'L': [], 'M': [], 'N': [],
+     		'O': [], 'P': [], 'Q': [], 'R': [], 'S': [], 'T': [], 'U': [],
+     		'V': [], 'W': [], 'X': [], 'Y': [], 'Z': []}
 
 
 def addLettersToMapping(letterMapping, cipherword, candidate):
